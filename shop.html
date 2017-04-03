@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<div class="collapse navbar-collapse">
+	<nav class="navbar navbar-light navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+	      </a>
+	    </div>
+			<form class="navbar-form navbar-left" role="search">
+		  	<div class="form-group">
+					<input id="input-search" type="text" class="form-control" placeholder="Cari Judul atau Toko Buku">
+		  	</div>
+		  	<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			<form class="navbar-form navbar-right">
+				<a href="login.html" class="btn btn-info outline">Login</a>
+				<a href="signup.html" class="btn btn-info btn-grey ">Buka toko Gratis</a>
+			</form>
+	  </div>
+	</nav>
+</div>
+<!-- End of Navbar -->
+
+<!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/slide-image.jpg" class="img-responsive">
+      </div>
+      <div class="item">
+				<img src="img/slide-image.jpg" class="img-responsive">
+      </div>
+  </div>
+<!-- End of Carousel -->
+
+<!-- Nav -->
+	<div class="container-fluid" id="nav-tengah">
+		<div class="col-md-4">
+			<h5><a href="#">HOME</a> / SHOP</h5>
+		</div>
+		<div class="col-md-4">
+			<center><h4><strong>SHOP</strong></h4></center>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+<!-- End of Nav -->
+
+
+
+<!-- isi -->
+<div id="body-shop">
+	<div class="container-fluid">
+			<h4>Energi untuk kamu</h4>
+	</div>
+
+<!-- BERITA -->
+<div id="berita">
+	<div class="container-fluid">
+	  <div class="col-md-3" >
+	    <a href="#">
+	      <img src="img/berita.png" alt="berita" >
+	    </a>
+		</div>
+		<div class="col-md-3">
+	    <a href="#">
+	      <img src="img/berita.png" alt="berita" >
+	    </a>
+		</div>
+		<div class="col-md-3">
+	    <a href="#">
+	      <img src="img/berita.png" alt="berita" >
+	    </a>
+		</div>
+		<div class="col-md-3">
+	    <a href="#">
+	      <img src="img/berita.png" alt="berita" >
+	    </a>
+		</div>
+	</div>
+</div>
+<!-- END OF BERITA -->
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+					<div class="dropdown">
+						<label for="usr">Kategori</label>
+					  <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Kategori
+							<div class="pull-right">
+					    	<span class="caret"></span>
+							</div>
+					  </button>
+					  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Kategori 1</a></li>
+					    <li><a href="#">Kategori 2</a></li>
+					    <li><a href="#">Kategori 3</a></li>
+					  </ul>
+					</div>
+					<br>
+					<div class="dropdown">
+						<label for="usr">Sub - Kategori</label>
+					  <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Sub-Kategori
+							<div class="pull-right">
+					    	<span class="caret"></span>
+							</div>
+					  </button>
+					  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Sub-Kategori 1</a></li>
+					    <li><a href="#">Sub-Kategori 2</a></li>
+					    <li><a href="#">Sub-Kategori 3</a></li>
+					  </ul>
+					</div>
+					<br>
+					<div class="dropdown">
+						<label for="usr">Lokasi</label>
+					  <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Lokasi
+							<div class="pull-right">
+					    	<span class="caret"></span>
+							</div>
+					  </button>
+					  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Lokasi 1</a></li>
+					    <li><a href="#">Lokasi 2</a></li>
+					    <li><a href="#">Lokasi 3</a></li>
+					  </ul>
+					</div>
+					<br>
+					<label for="usr">Jenis Barang</label>
+					<div class="container">
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Baru</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Bekas</label>
+						</div>
+					</div>
+					<br>
+					<label for="usr">Jenis Toko Buku</label>
+					<div class="container">
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Verified Store (Rekomedasi)</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Semua Toko</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-6">
+					<p>Showing 4 All Results</p>
+					<p>View 9/18/27/All</p>
+					<label for="usr">Filter:</label>
+					<a href="#" id="filter">COLOR</a>
+					<a href="#" id="filter">BRAND</a>
+				</div>
+				<div class="col-md-6">
+					<div class="col-sm-3">
+						<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-th"></i></button>
+						<button class="btn btn-info btn-round outline" style="color:#46b8da"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+					</div>
+					<div class="col-sm-8">
+						<div class="dropdown">
+							<button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Short by Newness
+								<div class="pull-right">
+						    	<span class="caret"></span>
+								</div>
+						  </button>
+						  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">Short by Rating</a></li>
+						    <li><a href="#">Short by Newness</a></li>
+						    <li><a href="#">Short by Price</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row items" >
+				<div class="col-md-12" id="body-slider">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="detail.html">
+					      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+								</a>
+					    	<div class="caption">
+									<h5 id="judul">
+										Book Number 1
+										<div id="hearts" class="starrr pull-right"></div>
+									</h5>
+									<a href="detail.html">
+						    		<h4>Novel Drama</h4>
+									</a>
+						    	<h4 id="harga">Rp. 35.000,-</h4>
+					    	</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- End of isi -->
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>

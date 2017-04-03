@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navbar -->
+<div class="collapse navbar-collapse">
+	<nav class="navbar navbar-light navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+	      </a>
+	    </div>
+			<form class="navbar-form navbar-left" role="search">
+		  	<div class="form-group">
+					<input id="input-search" type="text" class="form-control" placeholder="Cari Judul atau Toko Buku">
+		  	</div>
+		  	<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			<form class="navbar-form navbar-right">
+				<a href="login.html" class="btn btn-info outline">Login</a>
+				<a href="signup.html" class="btn btn-info btn-grey ">Buka toko Gratis</a>
+			</form>
+	  </div>
+	</nav>
+</div>
+<!-- End of Navbar -->
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/background-carousel.jpg" alt="A" width="auto" height="50">
+				<div class="carousel-caption">
+					<div id="caption">
+		        <h1>30 Hari Membuka Imajinasi Baru</h1>
+		        <p>Temukan referensi buku menarik yang dapat mengembangkan potensi & kemampuan kamu.</p>
+					</div>
+	      </div>
+      </div>
+      <div class="item">
+        <img src="img/background-carousel.jpg" class="img-responsive" alt="B" width="auto" height="550">
+      </div>
+      <div class="item">
+        <img src="img/background-carousel.jpg" class="img-responsive" alt="C" width="auto" height="550">
+      </div>
+			<div class="item">
+        <img src="img/background-carousel.jpg" class="img-responsive" alt="D" width="auto" height="550">
+      </div>
+    </div>
+
+	<!-- Tombol Cari Tau -->
+	<div id="btn-caritau">
+		<a href="shop.html" class="btn btn-info btn-lg btn-caritau">Cari tau<span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      	<span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- End of Carousel -->
+<br>
+<div class="container">
+<!-- Hot -->
+<div class="row">
+  <div class="col-sm-4" id="sejarah">
+		<div id="sejarah2">
+			<h1>Saatnya Memutar Waktu</h1>
+			<p>Masuk kedalam dimensi dimana kamu dapat mengetahui tentang sejarah dan cerita yang kamu suka</p>
+			<br>
+				<button type="button" class="btn btn-default outline-white">Cari Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+		</div>
+  </div>
+  <div class="col-sm-8">
+		<div class="row">
+			<div class="col-sm-6" id="komik">
+				<div id="komik2">
+					<h1>Komik Setiap Hari</h1>
+					<p>Rasakan pengalaman baru mencari komik kesayangan kamu.</p>
+						<button type="button" class="btn btn-default outline-white">Cari Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+				</div>
+			</div>
+			<div class="col-sm-6" id="karya">
+				<div id="karya2">
+						<h1>Totalitas Berkarya</h1>
+						<p>Dukung dan kembangkan passion kamu, baca buku yang kamu suka sekarang</p>
+							<button type="button" class="btn btn-default outline-white">Cari Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-sm-12" id="pengalaman">
+					<div id="pengalaman2">
+							<h1>Jelajahi Pengalaman Baru</h1>
+							<p>Temukan buku yang pas dengan mood kamu minggu ini</p>
+							<br />
+								<button type="button" class="btn btn-default outline-white">Cari Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- End of Hot -->
+
+<!-- Populer -->
+<div class="page-header">
+	<h3>Buku Populer
+		<div class="pull-right">
+			<button class="btn btn-info btn-round"><span class="glyphicon glyphicon-chevron-left"></span></button>
+			<button class="btn btn-info btn-round"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		</div>
+	</h3>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+			<a href="detail.html">
+      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+			</a>
+    	<div class="caption">
+				<h5 id="judul">
+					Book Number 1
+					<div id="hearts" class="starrr pull-right"></div>
+				</h5>
+				<a href="detail.html">
+	    		<h4>Novel Drama</h4>
+				</a>
+	    	<h4 id="harga">Rp. 35.000,-</h4>
+    	</div>
+    </div>
+  </div>
+	<div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+			<a href="detail.html">
+      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+			</a>
+    	<div class="caption">
+				<h5 id="judul">
+					Book Number 1
+					<div id="hearts" class="starrr pull-right"></div>
+				</h5>
+				<a href="detail.html">
+	    		<h4>Novel Drama</h4>
+				</a>
+	    	<h4 id="harga">Rp. 35.000,-</h4>
+    	</div>
+    </div>
+  </div>
+	<div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+			<a href="detail.html">
+      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+			</a>
+    	<div class="caption">
+				<h5 id="judul">
+					Book Number 1
+					<div id="hearts" class="starrr pull-right"></div>
+				</h5>
+				<a href="detail.html">
+	    		<h4>Novel Drama</h4>
+				</a>
+	    	<h4 id="harga">Rp. 35.000,-</h4>
+    	</div>
+    </div>
+  </div>
+	<div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+			<a href="detail.html">
+      	<img class="img-responsive" src="img/buku.png" alt="buku1">
+			</a>
+    	<div class="caption">
+				<h5 id="judul">
+					Book Number 1
+					<div id="hearts" class="starrr pull-right"></div>
+				</h5>
+				<a href="detail.html">
+	    		<h4>Novel Drama</h4>
+				</a>
+	    	<h4 id="harga">Rp. 35.000,-</h4>
+    	</div>
+    </div>
+  </div>
+
+
+</div>
+<!-- End of Populer -->
+</div>
+<!-- Loops -->
+<div class="container-fluid" id="loops">
+  <div class="container">
+		<div class="row">
+			<div class="col-sm-12" >
+				<img src="img/loops.png" class="img-responsive" alt="loops" id="loops-logo">
+			</div>
+		</div>
+		<div class="row">
+	    <div class="col-sm-6" id="loops-text">
+	      <h2>Buku di lemari bisa lebih berguna dan memberi manfaat.</h2>
+		  	<br>
+	      <h4>Sekarang kamu dapat berdonasi dan meminjamkan buku sesuai dengan keinginan kamu, kapan pun dan kemana saja</h4>
+	    </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6" >
+				<div class="pull-right">
+					<button type="button" class="btn btn-info btn-lg outline-white">Galang Donasi</button>
+					<button type="button" class="btn btn-info btn-white btn-lg">Berdonasi</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of Loops -->
+<!-- promo -->
+<div id="promo">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" id="manfaat">
+				<div id="manfaat2">
+					<div class="col-sm-5">
+						<div id="bonus">20%</div>
+					</div>
+					<div class="">
+						<h2>Rasakan Manfaat</h2>
+						<p>Kode kupon untuk setiap toko berverified</p>
+						<button type="button" class="btn btn-default outline-white">Pesan Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6" id="pesan">
+				<div id="pesan2">
+					<h2>Buku yang kamu cari gak ada?</h2>
+					<p>Sekarang kamu bisa pesan buku dalam jangka waktu yang kamu mau!</p>
+					<button type="button" class="btn btn-default outline-white">Pesan Buku<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+				</div>
+			</div>
+		</div>
+</div>
+
+</div>
+<!-- End of promo -->
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>

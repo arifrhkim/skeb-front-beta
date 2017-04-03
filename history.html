@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body id="body-login">
+<!-- Navbar -->
+
+<nav class="navbar navbar-light navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">
+				<img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+			</a>
+		</div>
+		<form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				<input id="input-search" type="text" class="form-control input-round" placeholder="Cari Judul atau Toko Buku">
+			</div>
+			<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+		</form>
+		<ul class="nav navbar-nav navbar-right" id="navbar-profile">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-profile-pic">
+				<img src="http://placehold.it/32x32" class="img-circle" id="navbar-profile-pic2"> Hi, Telolet! <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+						<li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- End of Navbar -->
+<div class="container-fluid">
+	<div class="row bg-white" >
+		<div class="col-md-2">
+			<div class="row">
+				<ul class="nav nav-pills nav-stacked nav-left">
+					<li role="presentation">
+						<a href="profile-edit.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						PROFILE</a>
+					</li>
+					<li role="presentation"><a href="dashboard.html"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+						DASHBOARD</a></li>
+					<li role="presentation"><a href="toko-buku.html"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+						TOKO BUKU</a></li>
+					<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						HISTORY BELANJA</a></li>
+					<hr />
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						ORDER</a></li>
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						BERIKLAN</a></li>
+					<hr />
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						BUAT VERIFIKASY STORE</a></li>
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						TULIS BLOG</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10" id="toko-buku">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#konf-bayar">Konfirmasi Pembayaran</a></li>
+				<li><a data-toggle="tab" href="#status-bayar">Status Pembayaran</a></li>
+				<li><a data-toggle="tab" href="#konf-terima">Konfirmasi Penerimaan</a></li>
+				<li><a data-toggle="tab" href="#daftar-trans">Daftar Transaksi</a></li>
+			</ul>
+
+			<div class="tab-content" id="tab-toko">
+
+				<div id="konf-bayar" class="tab-pane fade in active">
+
+					<div class="input-group">
+						<span class="input-group-addon addon-search"><i class="glyphicon glyphicon-search"></i></span>
+						<input type="text" class="form-control" placeholder="Cari nama dan Judul buku" id="input-lines">
+					</div>
+					<table class="table" style="margin-top:20px;">
+				    <tbody>
+				      <tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Satu <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-info btn-xs btn-sqr btn-block" data-toggle="modal" data-target="#modal-konf-bayar">Konfirmasi Pembayaran</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Dua <span class="label label-info">Baru</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-sqr btn-block disabled">Terkonfirmasi</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Tiga <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-warning btn-xs btn-sqr btn-block btn-block disabled">Diproses</button>
+								</td>
+				      </tr>
+				    </tbody>
+				  </table>
+
+					<div id="modal-konf-bayar" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Konfirmasi Pembayaran</h4>
+					      </div>
+					      <div class="modal-body">
+									Bank Tujuan:
+									<div class="form-group">
+										<select class="form-control" id="bank-tujuan">
+											<option>Pilih Bank Tujuan</option>
+											<option>Bank 1</option>
+											<option>Bank 2</option>
+										</select>
+									</div>
+									Cara Pembayaran:
+									<div class="form-group">
+										<select class="form-control" id="metode-bayar">
+											<option>Pilih Metode Pembayaran</option>
+											<option>Bayar 1</option>
+											<option>Bayar 2</option>
+										</select>
+									</div>
+									Bank Yang Digunakan:
+									<div class="form-group">
+										<select class="form-control" id="bank-tujuan">
+											<option>Pilih Nama Bank</option>
+											<option>Bank 1</option>
+											<option>Bank 2</option>
+										</select>
+									</div>
+									Nomor Rekening Saya:
+									<div class="form-group">
+										<input type="text" class="form-control" id="no-rek" placeholder="Masukan Nomor Rekening">
+										<h6>Pastikan nomor rekening Anda valid.</h6>
+									</div>
+									Nomor Rekening Saya:
+									<div class="form-group">
+										<input type="text" class="form-control" id="no-rek" placeholder="Masukan Nomor Rekening">
+									</div>
+									1. <a href="#" class="btn btn-warning btn-xs btn-sqr">Upload Dokumen</a><br>
+									2. <a href="#" class="btn btn-warning btn-xs btn-sqr">Upload Dokumen</a><br>
+					      </div>
+
+					      <div class="modal-footer">
+									<center>
+					        	<button type="button" class="btn btn-default btn-sqr btn-length" data-dismiss="modal">Kembali</button>
+					        	<button type="button" class="btn btn-info btn-sqr btn-length" data-dismiss="modal">Kirim Bukti!</button>
+									</center>
+					      </div>
+
+					    </div>
+
+					  </div>
+					</div>
+
+				</div>
+
+				<div id="status-bayar" class="tab-pane fade">
+					<div class="input-group">
+						<span class="input-group-addon addon-search"><i class="glyphicon glyphicon-search"></i></span>
+						<input type="text" class="form-control" placeholder="Cari nama dan Judul buku" id="input-lines">
+					</div>
+					<table class="table" style="margin-top:20px;">
+				    <tbody>
+				      <tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Satu <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-block btn-sqr" data-toggle="modal" data-target="#lihat-detail">Lihat Detail</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Dua <span class="label label-info">Baru</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-block btn-sqr" data-toggle="modal" data-target="#lihat-detail">Lihat Detail</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Tiga <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-block btn-sqr" data-toggle="modal" data-target="#lihat-detail">Lihat Detail</button>
+								</td>
+				      </tr>
+				    </tbody>
+				  </table>
+
+					<!-- Modal -->
+					<div id="lihat-detail" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									<center>
+						        <h4 class="modal-title">Status Pesanan</h4>
+										<h5>Kode: 89asd9</h5>
+									</center>
+					      </div>
+					      <div class="modal-body">
+									<table class="table">
+										<tr>
+											<td>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-warning btn-sqr btn-block">Aktivitas Pembeli</a>
+													<table class="table" id="modal-detail">
+														<tr>
+															<td>Tanggal:</td>
+															<td>Waktu:</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-sm-8">
+													Selesai melakukan check out order menunggu konfirmasi pembayaran
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-default btn-sqr btn-block">Aktivitas Skeb book</a>
+													<table class="table" id="modal-detail">
+														<tr>
+															<td>Tanggal:</td>
+															<td>Waktu:</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-sm-8">
+													Verifikasi konfirmasi pembayaran telah diterima oleh skeb book store
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-info btn-sqr btn-block">Skeb book & Seller</a>
+													<table class="table" id="modal-detail">
+														<tr>
+															<td>Tanggal:</td>
+															<td>Waktu:</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-sm-8">
+													Pesanan sedang diproses
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-success btn-sqr btn-block">Aktivitas Seller</a>
+													<table class="table" id="modal-detail">
+														<tr>
+															<td>Tanggal:</td>
+															<td>Waktu:</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-sm-8">
+													Pesanan telah diterima barang sedang dalam proses packing
+												</div>
+											</td>
+										</tr>
+
+									</table>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default btn-sqr" data-dismiss="modal">Kembali</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+
+				</div>
+
+				<div id="konf-terima" class="tab-pane fade">
+
+					<div class="input-group">
+						<span class="input-group-addon addon-search"><i class="glyphicon glyphicon-search"></i></span>
+						<input type="text" class="form-control" placeholder="Cari nama dan Judul buku" id="input-lines">
+					</div>
+					<table class="table" style="margin-top:20px;">
+				    <tbody>
+				      <tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Satu <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-warning btn-xs btn-sqr btn-block" data-toggle="modal" data-target="#modal-konf-barang">Konfirmasi Barang</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Dua <span class="label label-info">Baru</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-sqr btn-block btn-block disabled">Barang telah diterima</button>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Tiga <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-4">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+											<div class="col-xs-4">
+												Kode:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<button type="button" class="btn btn-success btn-xs btn-sqr btn-block btn-block disabled">Barang telah diterima</button>
+								</td>
+				      </tr>
+				    </tbody>
+				  </table>
+
+					<div id="modal-konf-barang" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Konfirmasi Penerimaan</h4>
+					      </div>
+					      <div class="modal-body">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="col-sm-4">
+												<img src="http://placehold.it/60x60" alt="">
+											</div>
+											<div class="col-sm-8">
+												<h4>Buku Satu <span class="label label-success">Bekas</span></h4>
+												<p>Pembelian dari toko:</p>
+												<h5><strong>Total Rp. 55.000</strong></h5>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<p>Kode: ASD80ASD97U0</p>
+											<p>Tanggal Transaksi: 20/05/2017</p>
+											<div style="padding:15px; background-color:#5CB85C;">
+												<p>22/05/2017 - Barang telah dikirim</p>
+												<p>No. Resi : LKJH1345BJ325</p>
+											</div>
+										</div>
+									</div>
+					      </div>
+
+					      <div class="modal-footer">
+									<center>
+					        	<button type="button" class="btn btn-info btn-sqr btn-length" data-dismiss="modal">Sudah Diterima</button>
+					        	<button type="button" class="btn btn-default btn-sqr btn-length" data-dismiss="modal">Lacak Barang</button>
+									</center>
+					      </div>
+
+					    </div>
+
+					  </div>
+					</div>
+
+				</div>
+				<div id="daftar-trans" class="tab-pane fade">
+					d
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- isi -->
+
+<!-- End of isi -->
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>

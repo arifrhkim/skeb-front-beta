@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="css/ssi-uploader.min.css" rel="stylesheet">
+
+</head>
+<body  id="body-login">
+<!-- Navbar -->
+<div class="collapse navbar-collapse">
+	<nav class="navbar navbar-light navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+	      </a>
+	    </div>
+			<form class="navbar-form navbar-left" role="search">
+		  	<div class="form-group">
+					<input id="input-search" type="text" class="form-control input-round" placeholder="Cari Judul atau Toko Buku">
+		  	</div>
+		  	<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			<ul class="nav navbar-nav navbar-right" id="navbar-profile">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-profile-pic">
+          <img src="http://placehold.it/32x32" class="img-circle" id="navbar-profile-pic2"> Hi, Telolet! <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+          </ul>
+        </li>
+      </ul>
+	  </div>
+	</nav>
+</div>
+<!-- End of Navbar -->
+
+<!-- isi -->
+<div class="container-fluid">
+	<div class="row bg-white" >
+		<div class="col-md-2">
+			<div class="row">
+				<ul class="nav nav-pills nav-stacked nav-left">
+					<li role="presentation">
+						<a href="profile-edit.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						PROFILE</a>
+					</li>
+				  <li role="presentation"><a href="dashboard.html"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+						DASHBOARD</a></li>
+				  <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+						TOKO BUKU</a></li>
+				  <li role="presentation"><a href="history.html"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						HISTORY BELANJA</a></li>
+					<hr />
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						ORDER</a></li>
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						BERIKLAN</a></li>
+					<hr />
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						BUAT VERIFIKASY STORE</a></li>
+					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+						TULIS BLOG</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10" id="toko-buku">
+			<ul class="nav nav-tabs">
+				<li><a data-toggle="tab" href="#info-toko">Informasi Toko</a></li>
+				<li class="active"><a data-toggle="tab" href="#edit-toko">Edit Toko / Produk</a></li>
+				<div class="pull-right">
+					<a data-toggle="tab" href="#upload-buku" class="btn btn-primary btn-sqr btn-sm">Upload Buku</a>
+					<a href="#" class="btn btn-danger btn-sqr btn-sm">Kunjungi Toko</a>
+				</div>
+			</ul>
+			<div class="tab-content" id="tab-toko">
+				<div id="info-toko" class="tab-pane fade">
+					<form>
+							<div class="col-md-6">
+									<h3>Informasi Toko</h3>
+									<div class="form-group">
+										<input type="text" class="form-control" id="nama-toko" placeholder="Nama Toko Buku">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="tagline" placeholder="Tagline Bisnis">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="email-toko" placeholder="Email Bisnis">
+									</div>
+									<br />
+									<h3>Lokasi Toko</h3>
+									<div class="form-group">
+										<input type="text" class="form-control" id="alamat-toko" placeholder="Alamat Lengkap">
+									</div>
+									
+									<div class="form-group">
+										<select class="form-control" id="kota-toko">
+											<option>Lokasi Kota</option>
+											<option>Kota 2</option>
+											<option>Kota 3</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="kabupaten-toko">
+											<option>Lokasi Kabupaten</option>
+											<option>Kabupaten 1</option>
+											<option>Kabupaten 2</option>
+										</select>
+									</div>
+							</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-4">
+													<h3>Foto Toko</h3>
+													<img src="http://placehold.it/100x100" alt="">
+											</div>
+											<div class="col-md-8">
+													<h3>Header Toko</h3>
+													<img src="http://placehold.it/300x100" alt="">
+											</div>
+										</div>
+
+										<h3>Jam Kerja</h3>
+										<div class="form-group">
+											<div class="form-inline">
+												<div class="form-group">
+													<select class="form-control" id="hari-kerja">
+														<option>Dari hari</option>
+														<option>Senin</option>
+														<option>Selasa</option>
+														<option>Rabu</option>
+														<option>Kamis</option>
+														<option>Jumat</option>
+														<option>Sabtu</option>
+														<option>Minggu</option>
+													</select>
+												</div>
+												-
+												<div class="form-group">
+													<select class="form-control" id="hari-kerja-2">
+														<option>Ke hari</option>
+														<option>Senin</option>
+														<option>Selasa</option>
+														<option>Rabu</option>
+														<option>Kamis</option>
+														<option>Jumat</option>
+														<option>Sabtu</option>
+														<option>Minggu</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-inline">
+												<div class="form-group">
+													<select class="form-control" id="jam-kerja">
+														<option>Dari jam</option>
+														<option>07.00</option>
+														<option>08.00</option>
+													</select>
+												</div>
+												-
+												<div class="form-group">
+													<select class="form-control" id="jam-kerja-2">
+														<option>Ke jam</option>
+														<option>12.00</option>
+														<option>17.00</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<h3>Catatan untuk Pembeli</h3>
+										<div class="form-group">
+											<textarea class="form-control" rows="4" id="comment"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<button class="btn btn-sqr btn-block btn-lg btn-purple">Simpan Informasi</button>
+									</div>
+								</form>
+				</div>
+				<div id="edit-toko" class="tab-pane fade in active">
+					<nav class="navbar navbar-default nav-toko">
+					  <div class="container-fluid">
+							<form class="navbar-form navbar-left" role="search">
+								<div class="input-group">
+								  <span class="input-group-addon addon-search"><i class="glyphicon glyphicon-search"></i></span>
+								  <input type="text" class="form-control" placeholder="Cari nama dan Judul buku" id="input-line">
+								</div>
+							</form>
+							<form class="navbar-form navbar-right">
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle btn-sm btn-length" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    Kategori
+										<div class="pull-right">
+								    	<span class="caret"></span>
+										</div>
+								  </button>
+								  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+								    <li><a href="#">Kategori 1</a></li>
+								    <li><a href="#">Kategori 2</a></li>
+								    <li><a href="#">Kategori 3</a></li>
+								  </ul>
+	              </div>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle btn-sm btn-length" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										Sub-Kategori
+										<div class="pull-right">
+											<span class="caret"></span>
+										</div>
+									</button>
+									<ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+										<li><a href="#">Sub-Kategori 1</a></li>
+										<li><a href="#">Sub-Kategori 2</a></li>
+										<li><a href="#">Sub-Kategori 3</a></li>
+									</ul>
+	              </div>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle btn-sm btn-length" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    Jenis Barang
+										<div class="pull-right">
+								    	<span class="caret"></span>
+										</div>
+								  </button>
+								  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+								    <li><a href="#">Baru</a></li>
+								    <li><a href="#">Bekas</a></li>
+								  </ul>
+	              </div>
+							</form>
+					  </div>
+					</nav>
+					<table class="table">
+				    <tbody>
+				      <tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Satu <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<div class="pull-right">
+										<button type="button" class="btn btn-info btn-sm btn-sqr" data-toggle="modal" data-target="#modal-edit">Edit Buku</button>
+										<button type="button" class="btn btn-default btn-sqr btn-sm btn-none" data-toggle="modal" data-target="#modal-hapus">&times;</button>
+									</div>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Dua <span class="label label-info">Baru</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<div class="pull-right">
+										<button type="button" class="btn btn-info btn-sm btn-sqr" data-toggle="modal" data-target="#modal-edit">Edit Buku</button>
+										<button type="button" class="btn btn-default btn-sqr btn-sm btn-none" data-toggle="modal" data-target="#modal-hapus">&times;</button>
+									</div>
+								</td>
+				      </tr>
+							<tr>
+				        <td class="col-md-1">
+									<img src="http://placehold.it/60x60" alt="">
+								</td>
+				        <td class="col-md-9">
+									<h4>Buku Tiga <span class="label label-success">Bekas</span></h4>
+									<p>
+										<div class="row">
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list fa-stack-1x"></i>
+												</span>
+												Kategori:
+											</div>
+											<div class="col-xs-6">
+												<span class="fa-stack fa-sm">
+													<i class="fa fa-circle-thin fa-stack-2x"></i>
+													<i class="fa fa-list-alt fa-stack-1x"></i>
+												</span>
+												Sub - Kategori:
+											</div>
+										</div>
+									</p>
+								</td>
+				        <td class="col-md-2">
+									<div class="pull-right">
+										<button type="button" class="btn btn-info btn-sm btn-sqr" data-toggle="modal" data-target="#modal-edit">Edit Buku</button>
+										<button type="button" class="btn btn-default btn-sqr btn-sm btn-none" data-toggle="modal" data-target="#modal-hapus">&times;</button>
+									</div>
+								</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
+
+				<div id="modal-hapus" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Hapus Produk</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>Kamu yakin ingin menghapus buku / produk ini ?</p>
+				      </div>
+				      <div class="modal-footer">
+								<center>
+				        	<button type="button" class="btn btn-purple btn-sqr btn-length" data-dismiss="modal">Yes!</button>
+				        	<button type="button" class="btn btn-default btn-sqr btn-length" data-dismiss="modal">Cancel</button>
+								</center>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div id="modal-edit" class="modal fade" role="dialog">
+				  <div class="modal-dialog modal-lg">
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Edit Produk</h4>
+				      </div>
+				      <div class="modal-body">
+
+								<div class="row">
+									<form>
+										<div class="col-md-6">
+											<h4>Informasi Buku</h4>
+											<div class="row">
+												<div class="col-md-4">
+														<img src="http://placehold.it/120x120" alt="">
+												</div>
+												<div class="col-md-4">
+														<img src="http://placehold.it/120x120" alt="">
+												</div>
+												<div class="col-md-4">
+														<img src="http://placehold.it/120x120" alt="">
+												</div>
+											</div>
+											<br>
+											<div class="form-group">
+												<input type="text" class="form-control" id="nama-buku" placeholder="Judul Buku">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" id="penulis" placeholder="Nama penulis / Penerbit">
+											</div>
+											<div class="form-group">
+												<div class="form-inline">
+														<select class="form-control" id="kategori-buku">
+															<option>Kategori</option>
+															<option>Kategori 1</option>
+															<option>Kategori 2</option>
+															<option>Kategori 3</option>
+														</select>
+														<select class="form-control" id="subkategori-buku">
+															<option>Subkategori</option>
+															<option>Subkategori 1</option>
+															<option>Subkategori 2</option>
+															<option>Subkategori 3</option>
+														</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<textarea class="form-control" rows="5" id="comment"></textarea>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" id="harga-buku" placeholder="Harga Buku">
+											</div>
+											<div class="form-group">
+												<div class="form-inline">
+													<select class="form-control" id="subkategori-buku">
+														<option>Kondisi Barang</option>
+														<option>Subkategori 1</option>
+														<option>Subkategori 2</option>
+														<option>Subkategori 3</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" id="berat-buku" placeholder="Berat Buku">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<h4>Sinopsis Buku</h4>
+											<div class="form-group">
+												<textarea class="form-control" rows="15" id="comment"></textarea>
+											</div>
+											<h4>Informasi Tambahan</h4>
+											<div class="form-group">
+												<textarea class="form-control" rows="7" id="comment"></textarea>
+											</div>
+										</div>
+								</div>
+
+				      </div>
+				      <div class="modal-footer">
+								<button type="button" class="btn btn-purple btn-sqr btn-block" data-dismiss="modal">Simpan Buku</button>
+								</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div id="upload-buku" class="tab-pane fade">
+					<form>
+						<div class="col-md-6">
+							<h4>Informasi Buku</h4>
+							<input type="file" name="ssi-upload" multiple id="ssi-upload"/>
+							<br>
+							<div class="form-group">
+								<input type="text" class="form-control" id="nama-buku" placeholder="Judul Buku">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="penulis" placeholder="Nama penulis / Penerbit">
+							</div>
+							<div class="form-group">
+								<div class="form-inline">
+										<select class="form-control" id="kategori-buku">
+											<option>Kategori</option>
+											<option>Kategori 1</option>
+											<option>Kategori 2</option>
+											<option>Kategori 3</option>
+										</select>
+										<select class="form-control" id="subkategori-buku">
+											<option>Subkategori</option>
+											<option>Subkategori 1</option>
+											<option>Subkategori 2</option>
+											<option>Subkategori 3</option>
+										</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="5" id="comment"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="form-inline">
+									<input type="text" class="form-control" id="harga-buku" placeholder="Harga Buku">
+									<select class="form-control" id="subkategori-buku">
+										<option>Kondisi Barang</option>
+										<option>Subkategori 1</option>
+										<option>Subkategori 2</option>
+										<option>Subkategori 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="berat-buku" placeholder="Berat Buku">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h4>Sinopsis Buku</h4>
+							<div class="form-group">
+								<textarea class="form-control" rows="15" id="comment"></textarea>
+							</div>
+							<h4>Informasi Tambahan</h4>
+							<div class="form-group">
+								<textarea class="form-control" rows="7" id="comment"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<br>
+							<button class="btn btn-sqr btn-block btn-purple">Simpan Buku</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of isi -->
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/ssi-uploader.min.js"></script>
+
+<script>
+    var notifyOptions = {
+        iconButtons: {
+            className: 'fa fa-question about',
+            method: function (e, modal) {
+                ssi_modal.closeAll('notify');
+                var btn = $(this).addClass('disabled');
+                ssi_modal.dialog({
+                    onClose: function () {
+                        btn.removeClass('disabled')
+                    },
+                    onShow: function () {
+                    },
+                    okBtn: {className: 'btn btn-primary btn-sm'},
+                    title: 'ssi-modal',
+                    content: 'ssi-modal is an open source modal window plugin that only depends on jquery. It has many options and it\'s super flexible, maybe the most flexible modal out there... For more details click <a class="sss" href="http://ssbeefeater.github.io/#ssi-modal" target="_blank">here</a>',
+                    sizeClass: 'small',
+                    animation: true
+                });
+            }
+        }
+    };
+    $('#ssi-upload').ssi_uploader({
+        url: 'http://ssinput.com/php/upload.php',
+        maxFileSize: 6,
+        allowed: ['jpg', 'gif', 'txt', 'png', 'pdf']
+        ,onEachUpload:function(file){}
+    });
+    $('#ssi-upload2').ssi_uploader({url: 'uploadAction.php', preview: false});
+    $('#ssi-upload3').ssi_uploader({url: 'uploadAction.php', dropZone: false});
+    $('#ssi-upload4').ssi_uploader({url: 'uplodadAction.php', dropZone: false, allowed: ["pdf"]});
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>

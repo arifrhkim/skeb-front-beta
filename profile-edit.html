@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body id="body-login">
+<!-- Navbar -->
+<div class="collapse navbar-collapse">
+	<nav class="navbar navbar-light navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+	      </a>
+	    </div>
+			<form class="navbar-form navbar-left" role="search">
+		  	<div class="form-group">
+					<input id="input-search" type="text" class="form-control input-round" placeholder="Cari Judul atau Toko Buku">
+		  	</div>
+		  	<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			<ul class="nav navbar-nav navbar-right" id="navbar-profile">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-profile-pic">
+          <img src="http://placehold.it/32x32" class="img-circle" id="navbar-profile-pic2"> Hi, Telolet! <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+          </ul>
+        </li>
+      </ul>
+	  </div>
+	</nav>
+</div>
+<!-- End of Navbar -->
+
+<!-- isi -->
+<div class="container-fluid">
+	<div class="row bg-white" >
+		<div class="col-md-2">
+			<div class="row">
+			<ul class="nav nav-pills nav-stacked nav-left">
+				<li role="presentation" class="active">
+					<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					PROFILE</a>
+				</li>
+			  <li role="presentation"><a href="dashboard.html"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+					DASHBOARD</a></li>
+			  <li role="presentation"><a href="toko-buku.html"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+					TOKO BUKU</a></li>
+			  <li role="presentation"><a href="history.html"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+					HISTORY BELANJA</a></li>
+				<hr />
+				<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+					ORDER</a></li>
+				<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+					BERIKLAN</a></li>
+				<hr />
+				<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+					BUAT VERIFIKASY STORE</a></li>
+				<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+					TULIS BLOG</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="col-md-10">
+			<div class="container-fluid">
+				<div class="row"  id="panel-profile-edits">
+					<div class="col-md-2">
+						<center>
+						<img src="img/buku.png" class="img-responsive img-circle" alt="profile-pic">
+						<br />
+						<p>
+							Ukuran gambar maksimal 4 MB (.jpg,.jpeg, .png)
+						</p>
+						<a href="ubah-password.html" class="btn btn-sm btn-info btn-sqr">Ubah Password</a>
+					</center>
+					</div>
+					<div class="col-md-6">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+							</div>
+							<div class="form-group">
+							  <select class="form-control" id="kota">
+							    <option>Kota</option>
+							    <option>Kota 2</option>
+							    <option>Kota 3</option>
+							  </select>
+							</div>
+							<div class="form-group">
+							  <select class="form-control" id="provinsi">
+							    <option>Provinsi</option>
+							    <option>Provinsi 2</option>
+							    <option>Provinsi 3</option>
+							  </select>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="alamat" placeholder="Alamat Lengkap">
+							</div>
+							<label for="">Tanggal Lahir</label>
+							<div class="form-group">
+								<input type="date" class="form-control" id="alamat" placeholder="Alamat Lengkap">
+							</div>
+							<br>
+							<div class="form-group">
+								<input type="text" class="form-control" id="telp" placeholder="Nomor Telephone">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Alamat Email">
+							</div>
+							<a href="reg-success.html" class="btn btn-warning btn-sqr pull-right">Simpan</a>
+
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of isi -->
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>
