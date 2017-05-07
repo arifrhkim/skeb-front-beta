@@ -25,5 +25,10 @@
     "type": "git",
     "url": "https://github.com/ssbeefeater/ssi-uploader.git"
   },
-  "homepage": "https://github.com/ssbeefeater/ssi-uploader"
+  "homepage": "https://github.com/ssbeefeater/ssi-uploader",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }

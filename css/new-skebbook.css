@@ -1,0 +1,8 @@
+.equal, .equal > div[class*='col-'] {
+  display: flex; }
+
+.full-width {
+  width: 100%; }
+
+.color-green {
+  color: green; }

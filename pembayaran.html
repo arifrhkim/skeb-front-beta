@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skeb book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/skebbook.css">
+	<link rel="stylesheet" href="css/new-skebbook.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<div class="collapse navbar-collapse">
+	<nav class="navbar navbar-light navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">
+	        <img id="logo" alt="Logo Skeb Book" src="img/logo.png">
+	      </a>
+	    </div>
+			<form class="navbar-form navbar-left" role="search">
+		  	<div class="form-group">
+					<input id="input-search" type="text" class="form-control input-round" placeholder="Cari Judul atau Toko Buku">
+		  	</div>
+		  	<button class="btn btn-info btn-round"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+			<form class="navbar-form navbar-right">
+				<a href="login.html" class="btn btn-info outline">Login</a>
+				<a href="signup.html" class="btn btn-info btn-grey ">Buka toko Gratis</a>
+			</form>
+	  </div>
+	</nav>
+</div>
+<!-- End of Navbar -->
+
+
+
+<!-- isi -->
+
+
+
+<div class="container">
+
+	<ul class="nav nav-tabs">
+	    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+	    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+	    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+	    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+	  </ul>
+
+	  <div class="tab-content">
+	    <div id="home" class="tab-pane fade in active">
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">Detail pembeli</div>
+							<div class="panel-body">
+
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="form-group">
+											<input type="text" class="form-control input-sqr" placeholder="Nama penerima">
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="form-group">
+											<input type="text" class="form-control input-sqr" placeholder="Telephone/Handphone">
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<a type="button" class="btn btn-default btn-sqr btn-block" name="button"> Masukan alamat pengirim </a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row equal">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Detail belanja</div>
+							<div class="panel-body">
+
+								<table class="table">
+									<tbody>
+										<tr>
+											<td class="col-sm-2">
+												<img src="http://placehold.it/100x100" alt="">
+											</td>
+											<td class="col-sm-6">
+												<h5>Buku Satu</h5>
+											</td>
+											<td class="col-sm-2">
+												<input type="number" class="form-control" placeholder="1" id="jumlah-buku">
+											</td>
+											<td class="col-sm-2 text-center">
+												<p>Rp. 100.000</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="form-group">
+									<textarea class="form-control" rows="4" id="comment" placeholder="Catatan untuk pembeli"></textarea>
+								</div>
+
+								<table class="full-width">
+									<tr>
+										<th>Kurir Pengiriman</th>
+										<th>Paket Pengiriman</th>
+										<th>Biaya asuransi</th>
+										<th>Ongkos kirim</th>
+										<th>Subtotal</th>
+									</tr>
+									<tr>
+										<td class="col-sm-3">
+											<input type="number" class="form-control" placeholder="1" id="jumlah-buku">
+										</td>
+										<td class="col-sm-3	">
+											<input type="number" class="form-control" placeholder="1" id="jumlah-buku">
+										</td>
+										<td class="col-sm-2">Tidak didukung</td>
+										<td class="col-sm-2">Rp. 18.000</td>
+										<td class="col-sm-2">Rp. 38.000</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Ringkasan pembelian</div>
+							<div class="panel-body">
+								<div class="input-group">
+									<input type="text" class="form-control input-sqr" placeholder="Search for...">
+									<span class="input-group-btn">
+										<button class="btn btn-default input-sqr" type="button">Gunakan voucher</button>
+									</span>
+								</div>
+								<br>
+								<table class="full-width">
+									<tr>
+										<td>Total harga barang</td>
+										<td class="pull-right">Rp.100.000</td>
+									</tr>
+									<tr>
+										<td>Biaya kirim</td>
+										<td class="pull-right">Rp.100.000</td>
+									</tr>
+								</table>
+								<br>
+								<table class="full-width">
+									<tr class="color-green">
+										<td>Diskon 10%</td>
+										<td class="pull-right">Rp.100.000</td>
+									</tr>
+								</table>
+								<br>
+								<table class="full-width">
+									<tr>
+										<strong>
+											<td>Total belanja</td>
+											<td class="pull-right">Rp.100.000</td>
+										</strong>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="btn btn-danger btn-block btn-sqr btn-lg"> Pilih metode pembayaran </a>
+
+	    </div>
+	    <div id="menu1" class="tab-pane fade">
+	      <h3>Menu 1</h3>
+	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	    </div>
+	    <div id="menu2" class="tab-pane fade">
+	      <h3>Menu 2</h3>
+	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	    </div>
+	    <div id="menu3" class="tab-pane fade">
+	      <h3>Menu 3</h3>
+	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	    </div>
+	  </div>
+
+</div>
+
+
+
+<!-- End of isi -->
+
+
+
+<!-- contact -->
+<div class="container" id="contact">
+	<div class="row">
+  <div class="col-lg-6">
+  <div class="col-lg-5">
+    <h5><strong>SIGN UP NEWS LETTER</strong></h5>
+  </div>
+  <div class="col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your email address" id="subscribe">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button">Subscribe</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-4">
+    <center><h5><strong>FOLLOW US</strong></h5></center>
+  </div>
+  <div class="col-lg-8" >
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-info social" type="button">
+			<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+		</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<footer class="container-fluid">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Skeb book</h2>
+		</div>
+		<div class="col-sm-4">
+			<p>Marketplace that enable people to discover the goodness of their books.</p>
+			<p>We allowed people to sell, buy and donate/lend the book easily like never before.</p>
+			<p>Our commitment is to building powerful accessable education accross Indonesia</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Tentang Skeb Book</a><br>
+				<a href="#" class="foot-link">Aturan Penggunaan</a><br>
+				<a href="#" class="foot-link">Kebijakan Privasi</a><br>
+				<a href="#" class="foot-link">Berita & Pengumuman</a><br>
+				<a href="#" class="foot-link">Karir di Skeb book</a>
+			</div>
+			<div class="col-sm-6">
+				<h4>Penjualan</h4>
+				<a href="#" class="foot-link">Cara Belanja</a><br>
+				<a href="#" class="foot-link">Pembayaran</a><br>
+				<a href="#" class="foot-link">Jaminan Aman</a><br>
+				<a href="#" class="foot-link">Tips Berbelanja</a><br>
+				<a href="#" class="foot-link">Produk Terkini</a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Berjualan / berdagang</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block">Panduan Pembelian</button>
+			<button type="button" class="btn btn-default btn-lg outline-white btn-block	">Bantuan / Hubungi Kami</button>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+</body>
+</html>
