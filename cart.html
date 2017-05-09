@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<div w3-include-html="template/head.html"></div>
+<!-- End of Head -->
+<body>
+<!-- Navbar -->
+<div w3-include-html="template/navbar.html"></div>
+<!-- End of Navbar -->
+
+<!-- isi -->
+<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Keranjang Belanja</h3>
+				  </div>
+				  <div class="panel-body">
+
+						<table class="table">
+							<thead>
+								<tr>
+									<td class="col-md-1"></td>
+									<td class="col-md-7">Judul Buku</td>
+									<td class="col-md-2">Harga</td>
+									<td class="col-md-2">Jumlah</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<img src="http://placehold.it/60x60" alt="">
+									</td>
+									<td>
+										<h5>Buku Satu <span class="label label-default">Dari toko</span></h5>
+										<p>Pengiriman dari Jakarta</p>
+										<a href="#"><h6>Hapus</h6></a>
+									</td>
+									<td>
+										<p>Rp. 100.000</p>
+									</td>
+									<td>
+										<!-- <input type="number" class="form-control" placeholder="1" id="jumlah-buku"> -->
+										<form>
+											<div class="input-group">
+									      <span class="input-group-btn">
+									        <button class="btn btn-default" type="button">-</button>
+									      </span>
+									      <input class="form-control" placeholder="1" id="jumlah-buku">
+												<span class="input-group-btn">
+									        <button class="btn btn-default" type="button">+</button>
+									      </span>
+									    </div>
+										</form>
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+				  </div>
+				</div>
+				<div class="pull-right">
+					<p><strong>Sub Total Belanja (3 buku) <span style="color:#d9534f">Rp. 150.000</span></strong></p>
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+
+				<div class="panel panel-default">
+				  <div class="panel-heading" style="background-color:#d9534f; color:white;">Detail belanja</div>
+				  <div class="panel-body">
+				    <table style="width:100%">
+				    	<tr>
+				    		<td>Buku populer</td>
+				    		<td style="text-align:right">Rp.100.000</td>
+				    	</tr>
+							<tr>
+				    		<td>Buku populer</td>
+				    		<td style="text-align:right">Rp.100.000</td>
+				    	</tr>
+							<tr>
+				    		<td>Buku populer</td>
+				    		<td style="text-align:right">Rp.100.000</td>
+				    	</tr>
+				    </table>
+						<hr>
+						<table style="width:100%">
+				    	<tr>
+				    		<td><strong>Buku populer</strong></td>
+				    		<td style="text-align:right">Rp.100.000</td>
+				    	</tr>
+						</table>
+						<br>
+						<a href="#" class="btn btn-danger btn-block">Checkout Belanja</a>
+						<hr>
+						<form>
+							<div class="form-group">
+							  <select class="form-control" id="kota">
+							    <option>Pilih kurir antar</option>
+							    <option>Kurir A</option>
+							    <option>Kurir B</option>
+							  </select>
+							</div>
+							<div class="form-group">
+							  <select class="form-control" id="kota">
+							    <option>Pilih paket kurir</option>
+							    <option>Paket A</option>
+							    <option>Paket B</option>
+							  </select>
+							</div>
+							<div class="form-group">
+							  <select class="form-control" id="kota">
+							    <option>Pilih nama tempat</option>
+							    <option>Tempat A</option>
+							    <option>Tempat B</option>
+							  </select>
+							</div>
+							<button class="btn btn-danger btn-block" type="button" name="button">Estimasi Ongkos Kirim</button>
+						</form>
+						<br>
+						<table style="width:100%">
+				    	<tr>
+				    		<td><strong>Estimasi ongkos kirim</strong></td>
+				    		<td style="text-align:right"><strong>Rp.1.000</strong></td>
+				    	</tr>
+						</table>
+				</div>
+
+			</div>
+		</div>
+</div>
+</div>
+<!-- End of isi -->
+
+<!-- contact -->
+<div w3-include-html="template/foot-social.html"></div>
+<!-- End of contact -->
+
+<!-- Footer -->
+<div w3-include-html="template/footer.html"></div>
+<!-- End of footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/starrr.js"></script>
+<script src="js/w3data.js"></script>
+<script>w3IncludeHTML();</script>
+
+</body>
+</html>

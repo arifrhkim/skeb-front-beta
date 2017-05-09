@@ -1,3 +1,9 @@
+.badge-notify {
+  background-color: orange;
+  position: relative;
+  top: -10px;
+  left: -15px; }
+
 .equal, .equal > div[class*='col-'] {
   display: flex; }
 
