@@ -1,8 +1,14 @@
+// navbar
+
 .badge-notify {
   background-color: orange;
   position:relative;
   top: -10px;
   left: -15px;
+}
+
+.transparant {
+  background:transparent;
 }
 
 // payment-page
@@ -17,4 +23,191 @@
 
 .color-green {
   color: green;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#payment {
+  .tab-content {
+    border: none;
+  }
+
+  #step {
+    text-align: center;
+    list-style-type: none;
+    border: none;
+
+    li {
+      float: none;
+      display:inline-block;
+
+      a {
+        background:none;
+        border: none;
+      }
+    }
+  }
+
+  #metode-bayar {
+
+    .nav-tabs {
+      border: none;
+      li {
+        float:none;
+        display:inline-block;
+        *display:inline; /* ie7 fix */
+        zoom:1; /* hasLayout ie7 trigger */
+        a {
+          border: solid 1px lightgrey;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .nav-tabs, .nav-pills {
+        text-align:center;
+    }
+
+
+    .border-grey {
+      border: 1px solid lightgrey;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+  }
+
+
+  #kartu-kredit {
+    table {
+      width: 100%;
+    }
+  }
+}
+
+// help
+
+body {
+  margin: 0;
+}
+
+#nav-help {
+  .navbar-form {
+    color: white;
+    .btn {
+      color: white;
+    }
+  }
+}
+
+
+#bg-map {
+  margin:0;
+  margin-top: -75px;
+  background-image: url(../img/bg-map.png);
+  color:white;
+  text-align: center;
+  h1 {
+    font-size: 30pt;
+  }
+  p {
+    font-size: 18pt;
+  }
+  .input-group {
+    margin: auto;
+    width: 60%;
+    input, input:focus, input:active {
+      color:white;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+    input::placeholder {
+      color: #DDD;
+    }
+    button {
+      background: none;
+      color: white;
+      border: none;
+    }
+  }
+  hr {
+    width: 60%;
+    margin-top: 5px;
+  }
+}
+
+#nav-top {
+  margin: 0;
+  background-color: #614FF9;
+  border-radius: 0;
+  border: none;
+  a {
+    color: white;
+  }
+  li.dropdown.open > a {
+    background-color: #3425b1;
+  }
+  ul.dropdown-menu {
+    border:none;
+    a {
+      color: #333;
+    }
+  }
+}
+
+#foot-help {
+  background-color:white;
+  // border-top: solid 1px lightgrey;
+
+  h4 {
+    color:#000;
+  }
+
+  a {
+    color: #555;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  #foot-bottom {
+    li {
+      display: inline;
+      a {
+        padding: 10px;
+        // color: white;
+        font-size: 14pt;
+        text-decoration: none;
+      }
+      i:hover {
+        border-bottom: solid 2px #614FF9;
+      }
+    }
+
+  }
+}
+
+// Help Karir
+
+#help-subscribe {
+  .panel {
+    max-height: 5em;
+    input, input:focus, input:active {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+// Tentang
+
+#tentang {
+  p {
+    line-height: 200%;
+  }
 }

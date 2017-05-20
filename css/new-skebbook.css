@@ -4,6 +4,9 @@
   top: -10px;
   left: -15px; }
 
+.transparant {
+  background: transparent; }
+
 .equal, .equal > div[class*='col-'] {
   display: flex; }
 
@@ -12,3 +15,121 @@
 
 .color-green {
   color: green; }
+
+.text-right {
+  text-align: right; }
+
+#payment .tab-content {
+  border: none; }
+
+#payment #step {
+  text-align: center;
+  list-style-type: none;
+  border: none; }
+  #payment #step li {
+    float: none;
+    display: inline-block; }
+    #payment #step li a {
+      background: none;
+      border: none; }
+
+#payment #metode-bayar .nav-tabs {
+  border: none; }
+  #payment #metode-bayar .nav-tabs li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    zoom: 1;
+    /* hasLayout ie7 trigger */ }
+    #payment #metode-bayar .nav-tabs li a {
+      border: solid 1px lightgrey;
+      border-radius: 2px; }
+
+#payment #metode-bayar .nav-tabs, #payment #metode-bayar .nav-pills {
+  text-align: center; }
+
+#payment #metode-bayar .border-grey {
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  margin-bottom: 1em; }
+
+#payment #kartu-kredit table {
+  width: 100%; }
+
+body {
+  margin: 0; }
+
+#nav-help .navbar-form {
+  color: white; }
+  #nav-help .navbar-form .btn {
+    color: white; }
+
+#bg-map {
+  margin: 0;
+  margin-top: -75px;
+  background-image: url(../img/bg-map.png);
+  color: white;
+  text-align: center; }
+  #bg-map h1 {
+    font-size: 30pt; }
+  #bg-map p {
+    font-size: 18pt; }
+  #bg-map .input-group {
+    margin: auto;
+    width: 60%; }
+    #bg-map .input-group input, #bg-map .input-group input:focus, #bg-map .input-group input:active {
+      color: white;
+      background: none;
+      border: none;
+      box-shadow: none; }
+    #bg-map .input-group input::placeholder {
+      color: #DDD; }
+    #bg-map .input-group button {
+      background: none;
+      color: white;
+      border: none; }
+  #bg-map hr {
+    width: 60%;
+    margin-top: 5px; }
+
+#nav-top {
+  margin: 0;
+  background-color: #614FF9;
+  border-radius: 0;
+  border: none; }
+  #nav-top a {
+    color: white; }
+  #nav-top li.dropdown.open > a {
+    background-color: #3425b1; }
+  #nav-top ul.dropdown-menu {
+    border: none; }
+    #nav-top ul.dropdown-menu a {
+      color: #333; }
+
+#foot-help {
+  background-color: white; }
+  #foot-help h4 {
+    color: #000; }
+  #foot-help a {
+    color: #555; }
+  #foot-help a:hover {
+    color: #000; }
+  #foot-help #foot-bottom li {
+    display: inline; }
+    #foot-help #foot-bottom li a {
+      padding: 10px;
+      font-size: 14pt;
+      text-decoration: none; }
+    #foot-help #foot-bottom li i:hover {
+      border-bottom: solid 2px #614FF9; }
+
+#help-subscribe .panel {
+  max-height: 5em; }
+  #help-subscribe .panel input, #help-subscribe .panel input:focus, #help-subscribe .panel input:active {
+    background: none;
+    border: none;
+    box-shadow: none; }
+
+#tentang p {
+  line-height: 200%; }

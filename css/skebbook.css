@@ -1,6 +1,7 @@
 /* default */
 body {
-	background-color:#FAFAFA;
+	/*background-color:#FAFAFA;*/
+	background-color:#FFF;
 	margin-top: 70px;
 	font-family: 'Muli', sans-serif;
 }
@@ -28,7 +29,7 @@ footer p, a {
 }
 
 .btn {
-	border-radius: 24px;
+	/*border-radius: 24px;*/
 }
 .btn-sqr {
 	border-radius: 4px;
