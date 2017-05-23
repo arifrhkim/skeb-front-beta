@@ -124,6 +124,9 @@ body {
     #foot-help #foot-bottom li i:hover {
       border-bottom: solid 2px #614FF9; }
 
+#help-subscribe .btn {
+  border-radius: 3px; }
+
 #help-subscribe .panel {
   max-height: 5em; }
   #help-subscribe .panel input, #help-subscribe .panel input:focus, #help-subscribe .panel input:active {
@@ -133,3 +136,53 @@ body {
 
 #tentang p {
   line-height: 200%; }
+
+.tl {
+  margin-top: 50px; }
+
+.tl-circle {
+  background-color: #614FF9;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 24pt;
+  margin-top: -25px; }
+
+.tl-text {
+  text-align: right;
+  width: 40%; }
+  .tl-text h3 {
+    color: #614FF9;
+    font-size: 20pt; }
+  .tl-text p {
+    font-size: 12pt; }
+
+.invert {
+  margin-left: 60%;
+  text-align: left; }
+
+#help-aman li {
+  list-style-type: none; }
+
+#help-aman #aman-top p {
+  font-size: 14pt; }
+
+.tl-circle-pic {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -25px; }
+
+#help-cara li {
+  list-style-type: none; }
+
+#help-pembayaran li {
+  list-style-type: none; }

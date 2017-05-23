@@ -194,6 +194,9 @@ body {
 // Help Karir
 
 #help-subscribe {
+  .btn {
+    border-radius: 3px;
+  }
   .panel {
     max-height: 5em;
     input, input:focus, input:active {
@@ -209,5 +212,90 @@ body {
 #tentang {
   p {
     line-height: 200%;
+  }
+}
+
+// jaminan aman
+
+.tl {
+  margin-top: 50px;
+}
+
+.tl:before {
+  // top: 0px;
+  // bottom: 0px;
+  // position: absolute;
+  // content: " ";
+  // width: 3px;
+  // background-color: #ddd;
+  // left: 50%;
+  // margin-left: -1.5px;
+}
+
+.tl-circle {
+  background-color: #614FF9;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 24pt;
+  margin-top: -25px;
+}
+.tl-text {
+  text-align: right;
+  width: 40%;
+  h3 {
+    color: #614FF9;
+    font-size: 20pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+}
+.invert {
+  margin-left: 60%;
+  text-align: left;
+}
+
+#help-aman {
+  li {
+    list-style-type: none;
+  }
+  #aman-top {
+    p {
+      font-size:14pt;
+    }
+  }
+
+
+}
+
+// cara belanja
+
+.tl-circle-pic {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -25px;
+}
+
+#help-cara {
+  li {
+    list-style-type: none;
+  }
+}
+
+// pembayaran
+
+#help-pembayaran {
+  li {
+    list-style-type: none;
   }
 }
